@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding:0;
+    outline:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #181515;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+ 
+
+}
+.row{
+    display: flex;
+    word-wrap: wrap;
+}
+.container{
+    margin: auto;
+    width:700px;
+}
+
+#accordian{
+    height:80vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#accordian .qsn{
+    padding: 10px;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+#accordian .qsn.active span{
+    transform: rotate(180deg);
+    transition: 0.4s;
+}
+#accordian .qsn.active ~ .ans{
+    height: auto;
+    padding:25px;
+}
+#accordian .ans{
+    color: #fff;
+    margin:5px 0;
+    height:0;
+    overflow: hidden;
+    border-bottom: 1px solid #e5e5e5;
+    transition: 0.1s;
+}
